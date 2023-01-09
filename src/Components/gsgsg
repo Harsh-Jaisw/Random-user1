@@ -1,0 +1,43 @@
+   <table>
+          <thead>
+            <tr>
+              <th >Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>State</th>
+              <th>City</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((user) => (
+              <tr key={user.email}>
+                <td>{user.name.first} {user.name.last}</td>
+                <td>{user.email}</td>
+                <td>{user.phone}</td>
+                <td>{user.location.state}</td>
+                <td>{user.location.city}</td>
+                <td><img src={user.picture.medium} alt=''/></td>
+              </tr>
+            ))}
+            
+          </tbody>
+          <pagination/>
+        </table>
+
+
+
+        Navbar  
+        
+// export default Navbar  <nav>
+    //       <div>
+    //         <ul><li>
+    //         <Link to ='/'>Home</Link>
+    //         </li>
+    //         <li>
+    //         <Link to ='/user'>UserDetail</Link> 
+    //         </li>
+    //         </ul>
+    //       </div>
+    
+    //     </nav>
